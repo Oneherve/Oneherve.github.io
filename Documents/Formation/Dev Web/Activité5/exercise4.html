@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4 - Manipulation de tableaux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manipulation de tableaux</h1>
+        
+        <div class="input-group">
+            <label for="nouvel-element">Nouvel élément à ajouter :</label>
+            <input type="number" id="nouvel-element" placeholder="Entrez un nombre">
+            <button onclick="ajouterElement()">Ajouter à la fin</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="index-suppression">Index de l'élément à supprimer :</label>
+            <input type="number" id="index-suppression" min="0" placeholder="Index (0-based)">
+            <button onclick="supprimerElement()">Supprimer l'élément</button>
+        </div>
+        
+        <div class="button-group">
+            <button onclick="trierTableau()">Trier le tableau</button>
+            <button onclick="afficherTableau()">Afficher le tableau</button>
+        </div>
+        
+        <div class="results">
+            <h2>Tableau :</h2>
+            <p id="tableau">[5, 2, 8, 1, 9]</p>
+        </div>
+    </div>
+
+    <script src="scripts/exercise4.js"></script>
+</body>
+</html>

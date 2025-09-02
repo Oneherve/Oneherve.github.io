@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3 - Manipulation de dates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manipulation de dates</h1>
+        
+        <div class="input-group">
+            <label for="date">Entrez une date (JJ-MM-AAAA) :</label>
+            <input type="text" id="date" placeholder="Ex: 15-07-2023">
+            <button onclick="analyserDate()">Analyser la date</button>
+        </div>
+        
+        <div class="results">
+            <h2>Résultats :</h2>
+            <p>Jour : <span id="jour">-</span></p>
+            <p>Mois : <span id="mois">-</span></p>
+            <p>Année : <span id="annee">-</span></p>
+            <p>Différence avec aujourd'hui : <span id="difference">-</span> jours</p>
+        </div>
+    </div>
+
+    <script src="scripts/exercise3.js"></script>
+</body>
+</html>

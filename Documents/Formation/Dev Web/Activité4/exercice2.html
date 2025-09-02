@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Boucles en JavaScript</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .result { margin-top: 20px; padding: 15px; background-color: #f5f5f5; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Exercice 2 - Boucles en JavaScript</h1>
+    
+    <div>
+        <h2>1. Nombres de 1 à 10</h2>
+        <button onclick="showNumbers()">Afficher les nombres</button>
+    </div>
+    
+    <div>
+        <h2>2. Somme de 1 à 100</h2>
+        <button onclick="calculateSum()">Calculer la somme</button>
+    </div>
+    
+    <div>
+        <h2>3. Deviner un nombre</h2>
+        <button onclick="guessNumber()">Jouer</button>
+    </div>
+    
+    <div>
+        <h2>4. Suite de Fibonacci</h2>
+        <button onclick="generateFibonacci()">Générer la suite</button>
+    </div>
+    
+    <div id="result" class="result"></div>
+
+    <script src="scripts/exercice2.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Manipulation de nombres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manipulation de nombres</h1>
+        
+        <div class="input-group">
+            <label for="nombre">Entrez un nombre :</label>
+            <input type="number" id="nombre" placeholder="Ex: 12.345">
+        </div>
+        
+        <div class="button-group">
+            <button onclick="calculerRacine()">Calculer la racine carrée</button>
+            <button onclick="arrondirNombre()">Arrondir le nombre</button>
+            <button onclick="genererAleatoire()">Générer un nombre aléatoire (1-100)</button>
+            <button onclick="genererAleatoireIntervalle()">Générer entre min et max</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="min">Valeur minimale :</label>
+            <input type="number" id="min" value="1">
+            <label for="max">Valeur maximale :</label>
+            <input type="number" id="max" value="100">
+        </div>
+        
+        <div class="results">
+            <h2>Résultats :</h2>
+            <p>Racine carrée : <span id="racine">-</span></p>
+            <p>Nombre arrondi : <span id="arrondi">-</span></p>
+            <p>Nombre aléatoire : <span id="aleatoire">-</span></p>
+            <p>Nombre aléatoire personnalisé : <span id="aleatoire-perso">-</span></p>
+        </div>
+    </div>
+
+    <script src="scripts/exercise2.js"></script>
+</body>
+</html>

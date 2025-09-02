@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de prêt hypothécaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur de prêt hypothécaire</h1>
+        
+        <div class="input-group">
+            <label for="montant">Montant du prêt (€) :</label>
+            <input type="number" id="montant" min="0" placeholder="Ex: 200000">
+        </div>
+        
+        <div class="input-group">
+            <label for="taux">Taux d'intérêt annuel (%) :</label>
+            <input type="number" id="taux" min="0" step="0.01" placeholder="Ex: 3.5">
+        </div>
+        
+        <div class="input-group">
+            <label for="duree">Durée du prêt (années) :</label>
+            <input type="number" id="duree" min="1" placeholder="Ex: 25">
+        </div>
+        
+        <div class="button-group">
+            <button onclick="calculerMensualite()">Calculer la mensualité</button>
+        </div>
+        
+        <div class="results">
+            <h2>Résultat :</h2>
+            <p>Mensualité : <span id="mensualite">-</span> €</p>
+        </div>
+    </div>
+
+    <script src="scripts/calculateur.js"></script>
+</body>
+</html>
